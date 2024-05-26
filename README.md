@@ -3,7 +3,6 @@ A directed fuzzer for Ethereum smart contracts
  # Code Structure Descriptions
    Some details about the repository structure as following:  
    <ul>
- includes the patch generation system <code>Aroc</code>.  </li>
 <li>  <code>countSubTreesCpp.zip</code> includes the implementations of the sub-paths counting tool in section 4.2.2 of the papre. </li>
 <li>  <code>DFierSFuzz.zip</code> is used to directly fuzzing the testing smart contracts with given target lines, which is implemented based on sFuzz[1]. </li>
 <li>  <code>Datasets</code>  includes all experimental datasets. Specifically,
@@ -20,16 +19,7 @@ A directed fuzzer for Ethereum smart contracts
    <li>Prepare the data for the system: in the DFierSFuzz/contracts, put the testing contract including the source codes (.sol file) and the path constraint file (.json file). Several examples are put in the directory.</li>  
     <li> Launch the system: go to the directory: DFierSFuzz/build/fuzzer, execute the command: ./fuzzer -g -r 0 -d 120 && chmod +x fuzzMe && ./fuzzMe</li>  
    </ul>
-     
- ## Directly fuzzing testing contracts 
-  <ul>
-      <li>deploy the vulnerable contract to the private chain, and record the transaction nonce and the contract address.</li>  
-      <li>deploy the patch to the privte chain, and record the patch address.</li>  
-      <li>feed the patch address, the vulnerable contract address, the nonce of the vulnerable contract deployment transaction, and the vulnerable function signature to the <code>./TSE-Aroc/specoalTxCreator.go</code>.</li>  
-      <li>run the specialTxCreator.go file to get the transaction payloads.</li>  
-      <li>send a transaction with the above payloads to the private chain.</li>  
-   </ul>   
-   Now, the patch can protect the vulnerable contract from being exploited.
+
     
  # References
   [1] Nguyen T D , Pham L H , Sun J ,et al.sFuzz: An Efficient Adaptive Fuzzer for Solidity Smart Contracts[C]//ICSE '20: 42nd International Conference on Software Engineering.2020.DOI:10.1145/3377811.3380334. 
