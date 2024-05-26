@@ -23,6 +23,9 @@ A directed fuzzer for Ethereum smart contracts
     
  # References
   [1] Nguyen T D , Pham L H , Sun J ,et al.sFuzz: An Efficient Adaptive Fuzzer for Solidity Smart Contracts[C]//ICSE '20: 42nd International Conference on Software Engineering.2020.DOI:10.1145/3377811.3380334. 
+  
   [2] Bo Jiang, Ye Liu, and W. K. Chan. 2018. ContractFuzzer: fuzzing smart contracts for vulnerability detection. In Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering (ASE '18), 2018, pp.259–269. 
+
   [3]Etherscan, the Ethereum Blockchain Explorer. https://goto.etherscan.com/.
+  
   [4] Torres, C. F., Schütte, J., & State, R. Osiris: Hunting for integer bugs in ethereum smart contracts. In Proceedings of the 34th Annual Computer Security Applications Conference, 2018, pp. 664-676.  
