@@ -3,7 +3,7 @@ A directed fuzzer for Ethereum smart contracts
  # Code Structure Descriptions
    Some details about the repository structure as following:  
    <ul>
-<li>  <code>countSubTreesCpp.zip</code> includes the implementations of the sub-paths counting tool in section 4.2.2 of the papre. </li>
+<li>  <code>countSubTreesCpp.zip</code> includes the implementations of the sub-paths counting tool in section 4.2.2 of the paper. </li>
 <li>  <code>DFierSFuzz.zip</code> is used to directly fuzzing the testing smart contracts with given target lines, which is implemented based on sFuzz[1]. </li>
 <li>  <code>Datasets</code>  includes all experimental datasets. Specifically,
           <ul>
